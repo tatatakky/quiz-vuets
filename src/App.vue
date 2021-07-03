@@ -2,25 +2,25 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="#B98FE4"
       dark
     >
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Lambda Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src=""
           transition="scale-transition"
           width="40"
         />
 
         <v-img
-          alt="Vuetify Name"
+          alt="Lambda"
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          src=""
           width="100"
         />
       </div>
@@ -28,11 +28,10 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
+        href="/"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2"> More </span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -40,6 +39,17 @@
     <v-main>
       <router-view/>
     </v-main>
+
+    <v-footer color="#B98FE4" dark>
+      <v-row justify="center" no-gutters>
+        <v-col
+        class="#B98FE4 py-4 text-center white--text"
+        cols="12"
+      >
+        {{ new Date().getFullYear() }} — tatatakky
+      </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
@@ -54,3 +64,9 @@ export default Vue.extend({
   }),
 });
 </script>
+
+<style scoped>
+v-card__text .footer-text {
+  text-align: center;
+}
+</style>

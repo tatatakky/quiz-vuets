@@ -1,6 +1,7 @@
 export const quizdata = [
-    {"sentence": "What is this ?", "select": ["a", "b", "c", "d"], "correctAnswer": ["a"], "answer": ""},
-    {"sentence": "What is that ?", "select": ["1", "2", "3", "4"], "correctAnswer": ["2"], "answer": ""},
-    {"sentence": "What is it ?",   "select": ["j", "k", "l", "m"], "correctAnswer": ["l"], "answer": ""},
-    {"sentence": "What is xxxx ?", "select": ["5", "6", "7", "8"], "correctAnswer": ["8"], "answer": ""},
+    {"sentence": "What programming language works on JVM ?", "select": ["C", "Scala", "Rust", "Python"], "correctAnswer": "Scala", "answer": ""},
+    {"sentence": "What main programming language is Emacs written ?", "select": ["Lisp", "Haskell", "Clojure", "OCaml"], "correctAnswer": "Lisp", "answer": ""},
+    {"sentence": "What programming language is PureScript written ?",   "select": ["Smalltalk", "JavaScript", "TypeScript", "Haskell"], "correctAnswer": "Haskell", "answer": ""},
+    {"sentence": "What is compiler name for Scala3 ?", "select": ["clang", "dotty", "gcc", "ghc"], "correctAnswer": "dotty", "answer": ""},
+    {"sentence": "What is Cargo which build tool and package manager for ?", "select": ["Rust", "Scala", "F#", "Erlang"], "correctAnswer": "Rust", "answer": ""},
 ]

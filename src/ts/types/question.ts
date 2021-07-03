@@ -1,6 +1,6 @@
 export interface Question {
     sentence:      string,
     select:        Array<string>
-    correctAnswer: Array<string>,
+    correctAnswer: string,
     answer:        string
 }
