@@ -1,4 +1,6 @@
-export const quizdata = [
+import {Question} from "@/ts/types/question";
+
+export const quizdata: Question[] = [
     {"sentence": "What programming language works on JVM ?", "select": ["C", "Scala", "Rust", "Python"], "correctAnswer": "Scala", "answer": ""},
     {"sentence": "What main programming language is Emacs written ?", "select": ["Lisp", "Haskell", "Clojure", "OCaml"], "correctAnswer": "Lisp", "answer": ""},
     {"sentence": "What programming language is PureScript written ?",   "select": ["Smalltalk", "JavaScript", "TypeScript", "Haskell"], "correctAnswer": "Haskell", "answer": ""},

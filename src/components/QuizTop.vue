@@ -7,7 +7,7 @@
       <div class="explanation"> Please check all questions. Enjoy!</div>
 
       <!-- Show Questions which is select format -->
-      <p v-for="(q, index) in questions" v-bind:key="index">
+      <p v-for="(q, index) in questions" :key="index">
         <b> {{ index + 1 }}. {{ q.sentence }} </b><br>
         <v-radio-group v-model="q.answer">
           <v-radio v-for="s in q.select" :key="s" :label="`${s}`" :value="s" color="purple"></v-radio>
@@ -15,21 +15,21 @@
       </p>
 
       <!-- Button to check answer -->
-      <v-btn block elevation="2" color="#B98FE4" type="sumbit" :disabled="allSelected(questions)" v-on:click="checkAnswer()">
+      <v-btn block elevation="2" color="#B98FE4" type="sumbit" :disabled="allSelected(questions)" @click="checkAnswer()">
         <v-icon left>mdi-arrow-up-bold-box-outline</v-icon>
         submit
       </v-btn>
 
       <!-- Show Result -->
-      <QuizResult v-bind:correct_answer_num="correct_answer_number" v-bind:question_num="num" />
+      <QuizResult :correct_answer_num="correct_answer_number" :question_num="num" />
 
       <!-- Show Answer -->
-      <v-btn block elevation="2" color="#B98FE4" v-on:click="showAnswerClick()"> 
+      <v-btn block elevation="2" color="#B98FE4" @click="showAnswerClick()">
         <v-icon left>mdi-television</v-icon>
         Show Answer
       </v-btn>
       <div v-if="showed">
-        <QuizAnswer v-bind:questions="questions" />
+        <QuizAnswer :questions="questions" />
       </div>
 
     </div>
